@@ -9,7 +9,7 @@ app.use(express.static('public'))
 
 app.post('/', (req, res) => {
 	
-	console.log(JSON.stringify(res.body,null,4));
+	console.log(JSON.stringify(req.body,null,4));
 	res.send(req.body);
 	
 });
