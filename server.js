@@ -9,8 +9,9 @@ app.use(express.static('public'))
 
 app.post('/', (req, res) => {
 	
-	res.send(req.body);
 	console.log(JSON.stringify(res.body,null,4));
+	res.send(req.body);
+	
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
