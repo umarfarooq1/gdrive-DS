@@ -9,6 +9,9 @@ app.use(express.static('public'))
 
 app.post('/', (req, res) => {
 	
+	console.log(req.headers)
+	console.log(req.header)
+	console.log(Object.keys(req))
 	console.log(JSON.stringify(req.body,null,4));
 	res.send(req.body);
 	
