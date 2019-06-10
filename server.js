@@ -10,8 +10,8 @@ app.use(express.static('public'))
 app.post('/', (req, res) => {
 	
 	console.log("**********************Starting things up, giving info about changes**********************")
-	console.log(req.headers)
-	
+	console.log(req.headers);
+	res.status(200).send({"status": "ACK"});
 	
 });
 
