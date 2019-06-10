@@ -10,8 +10,11 @@ app.use(express.static('public'))
 app.post('/', (req, res) => {
 	
 	console.log(req.headers)
+	console.log("##########################################")_
 	console.log(req.header)
+	console.log("##########################################222222222222222222222222222")
 	console.log(Object.keys(req))
+	console.log("##########################################33333333333333333")
 	console.log(JSON.stringify(req.body,null,4));
 	res.send(req.body);
 	
