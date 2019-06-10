@@ -9,13 +9,14 @@ app.use(express.static('public'))
 
 app.post('/', (req, res) => {
 	
+	console.log("Starting things up")
 	console.log(req.headers)
 	console.log("##########################################")
-	console.log(req.header)
+	//console.log(req.header)
 	console.log("##########################################222222222222222222222222222")
 	console.log(Object.keys(req))
 	console.log("##########################################33333333333333333")
-	console.log(JSON.stringify(req.body));
+	//console.log(JSON.stringify(req.body));
 	console.log("##########################################ABCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
 	res.send(req.body);
 	
