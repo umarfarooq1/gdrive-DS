@@ -10,7 +10,7 @@ app.use(express.static('public'))
 app.post('/', (req, res) => {
 	
 	console.log(req.headers)
-	console.log("##########################################")_
+	console.log("##########################################")
 	console.log(req.header)
 	console.log("##########################################222222222222222222222222222")
 	console.log(Object.keys(req))
