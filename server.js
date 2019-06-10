@@ -15,7 +15,8 @@ app.post('/', (req, res) => {
 	console.log("##########################################222222222222222222222222222")
 	console.log(Object.keys(req))
 	console.log("##########################################33333333333333333")
-	console.log(JSON.stringify(req.body,null,4));
+	console.log(JSON.stringify(req.body));
+	console.log("##########################################ABCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
 	res.send(req.body);
 	
 });
