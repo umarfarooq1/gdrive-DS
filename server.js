@@ -9,7 +9,7 @@ app.use(bodyParser());
 app.post('/', (req, res) => {
 	
 	res.send(req.body);
-	
+	console.log(JSON.stringify(res.body,null,4));
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
